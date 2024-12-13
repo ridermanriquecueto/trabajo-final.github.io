@@ -5,23 +5,19 @@ document.addEventListener("DOMContentLoaded", function () {
     const finalizarCompraBtn = document.getElementById("finalizarCompra");
     const mensajeFinalizado = document.getElementById("mensajeFinalizado");
 
-    let total = 0; // Variable para el total del carrito
+    let total = 0;
     let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
-    // Función para actualizar la vista del carrito
     function actualizarCarrito() {
-        listaCarrito.innerHTML = ""; // Limpiar la lista
-        total = 0; // Reiniciar el total
+        listaCarrito.innerHTML = "";
+        total = 0;
 
         carrito.forEach((producto, index) => {
             const item = document.createElement("li");
-
-            // Crear el texto del producto
             const texto = document.createElement("span");
             texto.textContent = `${producto.nombre} - $${producto.precio.toFixed(2)} x ${producto.cantidad} (Total: $${(producto.precio * producto.cantidad).toFixed(2)})`;
             item.appendChild(texto);
 
-            // Crear el botón de eliminar
             const botonEliminar = document.createElement("button");
             botonEliminar.textContent = "Eliminar uno";
             botonEliminar.style.marginLeft = "10px";
@@ -33,38 +29,30 @@ document.addEventListener("DOMContentLoaded", function () {
 
             botonEliminar.addEventListener("click", () => {
                 if (producto.cantidad > 1) {
-                    // Reducir la cantidad
                     producto.cantidad -= 1;
                 } else {
-                    // Eliminar el producto si su cantidad llega a 1
                     carrito.splice(index, 1);
                 }
-                actualizarCarrito(); // Actualizar vista
+                actualizarCarrito();
             });
 
             item.appendChild(botonEliminar);
             listaCarrito.appendChild(item);
-
-            // Actualizar el total
             total += producto.precio * producto.cantidad;
         });
 
         totalPrecio.textContent = `Total: $${total.toFixed(2)}`;
-        localStorage.setItem("carrito", JSON.stringify(carrito)); // Guardar en localStorage
+        localStorage.setItem("carrito", JSON.stringify(carrito));
     }
 
-    // Función para vaciar el carrito
     function vaciarCarrito() {
         carrito = [];
-        localStorage.setItem("carrito", JSON.stringify(carrito)); // Asegurarse de que el localStorage se actualice
+        localStorage.setItem("carrito", JSON.stringify(carrito));
         actualizarCarrito();
-        console.log("Carrito vacío:", carrito); // Verificar que el carrito se vació correctamente
     }
 
-    // Vincula el botón "Vaciar Carrito"
     vaciarCarritoBtn.addEventListener("click", vaciarCarrito);
 
-    // Función para finalizar la compra
     finalizarCompraBtn.addEventListener("click", () => {
         if (carrito.length === 0) {
             alert("Tu carrito está vacío. Agrega productos antes de continuar.");
@@ -74,10 +62,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 resumenCompra += `${producto.nombre} - $${producto.precio} x ${producto.cantidad} = $${(producto.precio * producto.cantidad).toFixed(2)}\n`;
             });
             resumenCompra += `\nTotal: $${total.toFixed(2)}`;
-            resumenCompra += `\n\n¡Gracias por tu compra! 🎉 Tu pago ha sido simulado exitosamente.`;
-    
+            resumenCompra += `\n\n¡Gracias por tu compra! 🎉 Tu pago ha sido simulado exitosamente.!! que? queres comprobante!! eso no hace falta pibe disfruta de la compra sino pregunatele a tu abuelita q no hace falta! ajaja `; 
+
             alert(resumenCompra);
-    
+
             vaciarCarrito();
             mensajeFinalizado.innerHTML = `
                 <div style="color: #fff; background-color:rgb(131, 207, 188); padding: 10px; border-radius: 8px; text-align: center;">
@@ -92,6 +80,5 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // Inicializar el carrito al cargar la página
     actualizarCarrito();
 });

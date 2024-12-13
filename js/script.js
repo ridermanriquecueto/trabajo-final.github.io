@@ -4,8 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function mostrarProductos() {
-    // Aquí iría el código para mostrar los productos
-    // usando los datos de la API o estáticos
+    // Código para mostrar productos (puede ser estático o desde una API)
 }
 
 function agregarAlCarrito(event) {
@@ -32,4 +31,3 @@ function actualizarContadorCarrito() {
     const contador = carrito.reduce((total, producto) => total + producto.cantidad, 0);
     document.getElementById('carritoCount').textContent = contador;
 }
-
