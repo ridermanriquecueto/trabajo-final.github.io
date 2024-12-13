@@ -1,0 +1,30 @@
+[33mcommit 3b7401ed7da9663bd242169efa4d4b3bbba4a408[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: ridermanriquecueto <ridermc@gmail.com>
+Date:   Fri Dec 13 20:06:02 2024 -0300
+
+    Agrega funcionalidades de carrito y diseño responsivo
+
+[33mcommit 14f188ec53f246922efd2ff5b2bcd81f62b9f3ca[m
+Merge: b2de903 99aaa36
+Author: ridermanriquecueto <ridermc@gmail.com>
+Date:   Fri Dec 13 19:45:19 2024 -0300
+
+    Resuelto conflicto de fusión
+
+[33mcommit b2de903774d6fb420e68b5e3df13b6df377becad[m
+Author: ridermanriquecueto <ridermc@gmail.com>
+Date:   Fri Dec 13 19:41:00 2024 -0300
+
+    Actualización de estilos y algunos cambios en html
+
+[33mcommit 99aaa3695348499e9d6b1a630e6e8526129aec8c[m
+Author: rider <99133579+ridermanriquecueto@users.noreply.github.com>
+Date:   Fri Dec 13 18:59:16 2024 -0300
+
+    Add files via upload
+
+[33mcommit 7593716af8ad4cd29b09c575199bf8dcfcf9739d[m
+Author: ridermanriquecueto <ridermc@gmail.com>
+Date:   Fri Dec 13 18:37:23 2024 -0300
+
+    arreglos en carrito
