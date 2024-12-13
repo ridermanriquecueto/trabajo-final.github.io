@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -96,3 +97,120 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Casa de Hilos y Accesorios</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Archivo de estilos -->
+    <link rel="stylesheet" href="css/styles.css"> <!-- Ruta correcta para GitHub Pages -->
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.png" alt="Logo La Casa de Hilos y Accesorios" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <!-- Enlaces a la derecha -->
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="carrito.html">
+                                <img src="img/carrito.jpg" alt="Carrito" class="carrito-icon" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <a href="productos.html" id="iconoGato" onclick="gatoLlamador()">
+            <img src="img/cat_suerte.jpg" alt="Gato de la suerte" class="icono-gato">
+        </a>
+
+        <div class="menu-buscador-carrito">
+            <div id="buscador" class="input-group input-group-sm">
+                <input type="text" id="buscarProducto" class="form-control" placeholder="para 2025 jaja...">
+                <span class="input-group-text">
+                    <i class="fas fa-search"></i>
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="contacto">
+            <h1 class="text-center mb-4">Formulario de Contacto</h1>
+            <p class="text-center mb-5">Si tienes alguna pregunta, no dudes en escribirnos. ¡Estamos aquí para ayudarte!</p>
+    
+            <!-- Formulario de contacto -->
+            <form action="https://formspree.io/f/mnqkwpoj" method="POST" class="p-4 rounded shadow-lg bg-light" id="contactForm" onsubmit="clearForm()">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" class="form-control" required>
+                </div>
+            
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo Electrónico:</label>
+                    <input type="email" id="email" name="_replyto" class="form-control" required>
+                </div>
+            
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" class="form-control" rows="4" required></textarea>
+                </div>
+            
+                <button type="submit" class="btn btn-primary w-100">Enviar</button>
+            </form>
+            
+            <script>
+                function clearForm() {
+                    // Selecciona el formulario
+                    const form = document.getElementById('contactForm');
+            
+                    // Espera unos milisegundos para asegurarse de que se haya enviado
+                    setTimeout(() => {
+                        form.reset();
+                    }, 500); // Limpia después de 500 ms
+                }
+            </script>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="contacto-whatsapp">
+            <a href="https://wa.me/542216769436" target="_blank" class="whatsapp-enlace">
+                <img src="img/whatsapp-icon.png" alt="WhatsApp" class="whatsapp-icon">
+                Contactame por WhatsApp
+            </a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+>>>>>>> 99aaa3695348499e9d6b1a630e6e8526129aec8c
