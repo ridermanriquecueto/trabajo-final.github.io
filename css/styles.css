@@ -1,9 +1,11 @@
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
 }
+
 
 header {
     position: fixed;
@@ -17,8 +19,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
+
 
 .navbar {
     display: flex;
@@ -34,6 +37,7 @@ header {
     height: auto;
     margin-right: 10px;
 }
+
 
 .navbar-nav {
     display: flex;
@@ -52,32 +56,36 @@ header {
 }
 
 .navbar-nav .nav-link:hover {
-    color: #ff9800;
+    color: #ff9800; 
 }
+
 
 .navbar-nav .carrito-icon {
     width: 40px;
     height: auto;
 }
 
+
 footer {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #17534e;
+    background-color: #17534e;;
     color: white;
     text-align: center;
     padding: 0.5rem 0;
     z-index: 1000;
-    box-shadow: 0 -4px 6px rgba(84, 206, 196, 0.1);
+    box-shadow: 0 -4px 6px rgba(84, 206, 196, 0.1); 
 }
 
+
 main {
-    margin-top: 80px;
-    margin-bottom: 50px;
+    margin-top: 80px; 
+    margin-bottom: 50px; 
     padding: 20px;
 }
+
 
 #inicio {
     background-image: url("../img/im2.jpg");
@@ -89,9 +97,10 @@ main {
     margin-bottom: 50px;
 }
 
+
 form {
     max-width: 600px;
-    margin: 0 auto;
+    margin: 0 auto; 
 }
 
 form .form-control {
@@ -101,7 +110,7 @@ form .form-control {
 }
 
 form .form-control:focus {
-    border-color: #0f5f58;
+    border-color: #0f5f58; 
     box-shadow: 0 0 5px rgba(15, 95, 88, 0.5);
 }
 
@@ -112,15 +121,17 @@ form button {
 }
 
 form button:hover {
-    background-color: #0f5f58;
+    background-color: #0f5f58; 
     color: #fff;
 }
+
 
 .contacto p {
     font-size: 1.1rem;
     color: #333;
     line-height: 1.6;
 }
+
 
 .productos {
     display: flex;
@@ -133,29 +144,31 @@ form button:hover {
 .producto-card {
     width: 300px;
     background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 15px; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
     overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
     position: relative;
 }
 
 .producto-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-10px); 
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
+
 .producto-img {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-bottom: 3px solid #f1f1f1;
-    transition: transform 0.3s ease;
+    height: 200px; 
+    object-fit: cover; 
+    border-bottom: 3px solid #f1f1f1; 
+    transition: transform 0.3s ease; 
 }
 
 .producto-card:hover .producto-img {
-    transform: scale(1.05);
+    transform: scale(1.05); 
 }
+
 
 .producto-info {
     padding: 20px;
@@ -167,16 +180,16 @@ form button:hover {
     color: #333;
     margin: 10px 0;
     font-weight: bold;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease; 
 }
 
 .producto-nombre:hover {
-    color: #0f5f58;
+    color: #0f5f58; 
 }
 
 .producto-descripcion {
     font-size: 1.1rem;
-    color: #777;
+    color: #6feece;
     margin-bottom: 15px;
     line-height: 1.5;
 }
@@ -184,7 +197,7 @@ form button:hover {
 .producto-precio {
     font-size: 1.3rem;
     font-weight: bold;
-    color: #ff9800;
+    color: #ff9800; 
     margin-bottom: 15px;
 }
 
@@ -204,22 +217,24 @@ form button:hover {
 .btn-agregar:hover {
     background-color: #ff9800;
     color: #333;
-    transform: scale(1.05);
+    transform: scale(1.05); 
 }
 
 .btn-agregar:focus {
     outline: none;
 }
 
+
 .carrito-icon {
-    width: 30px;
+    width: 40px;
     height: auto;
     transition: transform 0.3s ease;
 }
 
 .carrito-icon:hover {
-    transform: scale(1.1);
+    transform: scale(1.1); 
 }
+
 
 .producto-card {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -232,14 +247,15 @@ form button:hover {
 
 @media (max-width: 768px) {
     .producto-card {
-        width: 90%;
-        margin: 10px auto;
+        width: 90%; 
+        margin: 10px auto; 
     }
 
     .producto-img {
-        height: 150px;
+        height: 100px; 
     }
 }
+
 
 @media (max-width: 768px) {
     .navbar-brand img {
@@ -261,6 +277,7 @@ form button:hover {
     }
 }
 
+
 #carrito {
     width: 80%;
     max-width: 1000px;
@@ -271,6 +288,7 @@ form button:hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+
 #carrito h2 {
     text-align: center;
     color: #333;
@@ -278,11 +296,13 @@ form button:hover {
     margin-bottom: 20px;
 }
 
+
 #lista-carrito {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
+
 
 #lista-carrito li {
     display: flex;
@@ -296,6 +316,7 @@ form button:hover {
     font-size: 16px;
 }
 
+
 #total-precio {
     text-align: center;
     font-size: 20px;
@@ -306,6 +327,7 @@ form button:hover {
     border-radius: 8px;
     margin-top: 20px;
 }
+
 
 button {
     padding: 8px 16px;
@@ -326,6 +348,7 @@ button {
     background-color: #ec971f;
 }
 
+
 #finalizarCompra {
     background-color: #5bc0de;
     color: white;
@@ -334,6 +357,7 @@ button {
 #finalizarCompra:hover {
     background-color: #31b0d5;
 }
+
 
 button[data-action="eliminar"] {
     background-color: #d9534f;
@@ -346,11 +370,13 @@ button[data-action="eliminar"]:hover {
     background-color: #c9302c;
 }
 
+
 #carrito {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 
 #mensajeFinalizado {
     text-align: center;
@@ -365,4 +391,207 @@ button[data-action="eliminar"]:hover {
     padding: 15px;
     border-radius: 8px;
     display: inline-block;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 768px) {
+    #carrito {
+        width: 90%;
+    }
+
+    #carrito h2 {
+        font-size: 20px;
+    }
+
+    #total-precio {
+        font-size: 18px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
+
+#productosList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;  
+    gap: 20px;  
+    padding: 20px;
+}
+
+
+.producto {
+    width: 100px;  
+    height: 365px;  
+    border-radius: 10px;
+    overflow: hidden;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  
+}
+
+
+.producto img {
+    width: 40%;
+    height: 180px; 
+    object-fit: cover;  
+    border-bottom: 2px solid #f0f0f0;
+}
+
+
+.producto .card-body {
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+}
+
+
+.producto .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+
+.producto .card-text {
+    font-size: 16px;
+    color: #28a745;  
+    margin-bottom: 15px;
+}
+
+
+.producto button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+
+.producto button:hover {
+    background-color: #0056b3;
+}
+
+
+.producto:hover {
+    transform: translateY(-5px);  
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);  
+}
+
+
+.menu-buscador-carrito {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+
+#buscador {
+    display: flex;
+    align-items: center;
+    width: 300px; 
+    height: 40px; 
+    margin-right: auto; 
+}
+
+
+#buscarProducto {
+    border: none;
+    height: 100%; 
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+
+.input-group-text {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; 
+    height: 100%; 
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+
+
+#iconoCarrito {
+    margin-left: 40px; /
+    cursor: pointer;
+}
+
+#iconoCarrito i {
+    color: #333; 
+    font-size: 24px; 
+}
+
+
+#iconoGato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px; 
+}
+
+.icono-gato {
+    width: 10px; 
+    height: auto;
+    cursor: pointer; 
+    transition: transform 0.1s ease; 
+}
+
+.icono-gato:hover {
+    transform: scale(1.1); /
+}
+
+
+
+.contacto-whatsapp {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.whatsapp-enlace {
+    text-decoration: none;
+    color: #25d366;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.whatsapp-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.contacto-whatsapp {
+    background-color: #e6f9ee;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 300px;
+}
+
+.whatsapp-icon {
+    transition: transform 0.3s;
+}
+
+.whatsapp-enlace:hover .whatsapp-icon {
+    transform: scale(1.2);
 }
