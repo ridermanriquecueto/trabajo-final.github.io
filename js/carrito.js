@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div style="color: #fff; background-color:rgb(131, 207, 188); padding: 10px; border-radius: 8px; text-align: center;">
                     <p style="font-size: 18px; font-weight: bold;">
                         ¡Compra exitosa! 🛍️ 🎉<br>
-                        ¡Gracias por confiar en nosotros!que? queres comprobante!! eso no hace falta pibe disfruta de la compra sino pregunatele a tu abuelita q no hace falta! ajaja 
+                        ¡Gracias por confiar en nosotros!que? queres comprobante!! eso no hace falta pibe disfruta de la compra sino preguntale a tu abuelita q no hace falta! ajaja 
                     </p>
                 </div>
             `;
