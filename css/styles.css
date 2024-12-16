@@ -71,12 +71,12 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #17534e;;
+    background-color: #154945;
     color: white;
     text-align: center;
     padding: 0.5rem 0;
     z-index: 1000;
-    box-shadow: 0 -4px 6px rgba(84, 206, 196, 0.1); 
+    box-shadow: 0 -4px 6px rgba(42, 170, 159, 0.1); 
 }
 
 
@@ -594,4 +594,79 @@ button[data-action="eliminar"]:hover {
 
 .whatsapp-enlace:hover .whatsapp-icon {
     transform: scale(1.2);
+}
+
+
+.background {
+    position: relative;
+    background-image: url('img/im2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+
+.overlay-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 10px 20px; 
+    background-color: rgba(0, 0, 0, 0.6); 
+    border-radius: 10px; 
+    animation: moveText 10s linear infinite; 
+}
+
+
+@keyframes moveText {
+    0% {
+        transform: translateX(-50%) translateX(-200px);
+    }
+    50% {
+        transform: translateX(-50%) translateX(200px);
+    }
+    100% {
+        transform: translateX(-50%) translateX(-200px);
+    }
+}
+
+
+.overlay-images {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px;
+    animation: move 15s linear infinite;
+}
+
+.overlay-images img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.overlay-images img:hover {
+    opacity: 1;
+}
+
+
+@keyframes move {
+    0% {
+        transform: translateX(-50%) translateX(-200px);
+    }
+    50% {
+        transform: translateX(-50%) translateX(200px);
+    }
+    100% {
+        transform: translateX(-50%) translateX(-200px);
+    }
 }
