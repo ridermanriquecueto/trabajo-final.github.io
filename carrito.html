@@ -39,7 +39,18 @@
                 </div>
             </div>
         </nav>
+    
+      
+        <div id="gato-container">
+            <a href="index.html" id="iconoGato" onclick="gatoLlamador()">
+                <img src="img\cat_suerte.jpg" alt="Gato de la suerte" class="icono-gato">
+            </a>
+            <div class="mensaje-container">
+                <div class="mensaje-animado">¡Pegale al gato para ir  inicio!</div>
+            </div>
+        </div>
     </header>
+    
 
     <main class="container mt-4">
         <h2 class="text-center">Carrito de Compras</h2>
@@ -49,7 +60,6 @@
             <button id="vaciarCarrito" class="btn btn-warning mx-2">Vaciar Carrito</button>
             <button id="finalizarCompra" class="btn btn-success mx-2">Finalizar Compra</button>
             <button id="volverProductos" class="btn btn-success mx-2" onclick="window.location.href='productos.html'">Volver productos</button>
-
         </div>
         <div id="mensajeFinalizado" class="mt-3"></div>
     </main>
@@ -59,5 +69,12 @@
     </footer>
 
     <script src="js/carrito.js"></script>
+    <script>
+     
+        function gatoLlamador() {
+           
+            window.location.href = "index.html";
+        }
+    </script>
 </body>
 </html>

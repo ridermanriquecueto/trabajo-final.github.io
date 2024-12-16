@@ -6,20 +6,19 @@ body {
     padding: 0;
 }
 
-
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: #154945;
+    background-color: #6A994E; 
     color: white;
     padding: 0.5rem 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -56,7 +55,7 @@ header {
 }
 
 .navbar-nav .nav-link:hover {
-    color: #ff9800; 
+    color: #ff9800;
 }
 
 
@@ -71,21 +70,19 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #154945;
+    background-color: #6A994E; 
     color: white;
     text-align: center;
     padding: 0.5rem 0;
     z-index: 1000;
-    box-shadow: 0 -4px 6px rgba(42, 170, 159, 0.1); 
+    box-shadow: 0 -4px 6px rgba(42, 170, 159, 0.1);
 }
-
 
 main {
     margin-top: 80px; 
     margin-bottom: 50px; 
     padding: 20px;
 }
-
 
 #inicio {
     background-image: url("../img/im2.jpg");
@@ -96,7 +93,6 @@ main {
     margin-top: 80px;
     margin-bottom: 50px;
 }
-
 
 form {
     max-width: 600px;
@@ -283,7 +279,7 @@ form button:hover {
     max-width: 1000px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #f8f9fa;
+    background-color: #386796;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -323,7 +319,7 @@ form button:hover {
     font-weight: bold;
     color: #333;
     padding: 15px 0;
-    background-color: #e0e0e0;
+    background-color: #0d614881;
     border-radius: 8px;
     margin-top: 20px;
 }
@@ -659,6 +655,7 @@ button[data-action="eliminar"]:hover {
 }
 
 
+
 @keyframes move {
     0% {
         transform: translateX(-50%) translateX(-200px);
@@ -668,5 +665,84 @@ button[data-action="eliminar"]:hover {
     }
     100% {
         transform: translateX(-50%) translateX(-200px);
+    }
+}
+
+
+
+#gato-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+
+.icono-gato {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+
+.icono-gato:hover {
+    transform: scale(1.2);
+}
+
+
+.mensaje-container {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+
+.mensaje-animado {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: rgba(69, 123, 173, 0.6);
+    padding: 5px 10px;
+    border-radius: 5px;
+    animation: mensajeAnimado 2s ease-in-out infinite;
+}
+
+
+@keyframes mensajeAnimado {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+
+.navbar {
+    position: relative;
+    z-index: 10;
+    background-color: #6A994E;
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        background-color: #4E8B47; 
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 14px;
+    }
+
+    #gato-container {
+        top: 10px; 
+    }
+
+    .mensaje-animado {
+        font-size: 14px; 
     }
 }
