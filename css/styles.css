@@ -746,3 +746,41 @@ button[data-action="eliminar"]:hover {
         font-size: 14px; 
     }
 }
+
+
+.mensaje-click {
+    display: none;  
+    position: absolute;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 5px;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: mensajeAnimado 1s ease-in-out infinite;
+}
+
+@keyframes mensajeAnimado {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+.icono-gato {
+    width: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.icono-gato:hover {
+    transform: scale(1.1);  
+}

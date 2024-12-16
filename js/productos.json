@@ -1,0 +1,14 @@
+[
+    { "id": 1, "nombre": "Hilo Rojo", "precio": 10, "stock": 10, "imagen": "img/hilo_rojo.jpg" },
+    { "id": 2, "nombre": "Hilo Azul", "precio": 12, "stock": 5, "imagen": "img/hilo_azul.jpg" },
+    { "id": 3, "nombre": "Hilo Verde", "precio": 15, "stock": 7, "imagen": "img/hilo_verde.jpg" },
+    { "id": 4, "nombre": "Hilo Amarillo", "precio": 8, "stock": 8, "imagen": "img/hilo_amarillo.jpg" },
+    { "id": 5, "nombre": "Hilo Negro", "precio": 20, "stock": 3, "imagen": "img/hilo_negro.jpg" },
+    { "id": 6, "nombre": "Hilo Blanco", "precio": 11, "stock": 6, "imagen": "img/hilo_blanco.jpg" },
+    { "id": 7, "nombre": "Aguja de Costura", "precio": 5, "stock": 15, "imagen": "img/aguja_costura.jpg" },
+    { "id": 8, "nombre": "Aguja para Jeans", "precio": 7, "stock": 12, "imagen": "img/aguja_jeans.jpg" },
+    { "id": 9, "nombre": "Aceite para Máquinas", "precio": 6, "stock": 20, "imagen": "img/aceite_maquinas.jpg" },
+    { "id": 10, "nombre": "Carretel de Hilo", "precio": 4, "stock": 30, "imagen": "img/carretel_hilo.jpg" },
+    { "id": 11, "nombre": "Tela de Algodón", "precio": 18, "stock": 10, "imagen": "img/tela_algodon.jpg" },
+    { "id": 12, "nombre": "Hilo Elástico", "precio": 9, "stock": 8, "imagen": "img/hilo_elastico.jpg" }
+]

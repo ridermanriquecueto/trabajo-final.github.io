@@ -58,29 +58,73 @@
             <h1 class="text-center mb-4">Formulario de Contacto</h1>
             <p class="text-center mb-5">Si tienes alguna pregunta, no dudes en escribirnos. ¡Estamos aquí para ayudarte!</p>
 
-            <form action="https://formspree.io/f/mnqkwpoj" method="POST" class="p-4 rounded shadow-lg bg-light" id="contactForm" onsubmit="clearForm()">
+            <form action="https://formspree.io/f/mnqkwpoj" method="POST" class="p-4 rounded shadow-lg bg-light" id="contactForm">
                 <div class="mb-3">
                     <label for="nombre" class="form-label">Nombre:</label>
                     <input type="text" id="nombre" name="nombre" class="form-control" required>
+                    <small class="text-danger d-none" id="errorNombre">El nombre es obligatorio.</small>
                 </div>
                 <div class="mb-3">
                     <label for="email" class="form-label">Correo Electrónico:</label>
                     <input type="email" id="email" name="_replyto" class="form-control" required>
+                    <small class="text-danger d-none" id="errorEmail">Ingresa un correo electrónico válido.</small>
                 </div>
                 <div class="mb-3">
                     <label for="mensaje" class="form-label">Mensaje:</label>
                     <textarea id="mensaje" name="mensaje" class="form-control" rows="4" required></textarea>
+                    <small class="text-danger d-none" id="errorMensaje">El mensaje no puede estar vacío.</small>
                 </div>
                 <button type="submit" class="btn btn-primary w-100">Enviar</button>
             </form>
             <script>
-                function clearForm() {
+                document.getElementById("contactForm").addEventListener("submit", function (event) {
+                    event.preventDefault(); // Evita el envío del formulario si hay errores
+                
+                    // Variables
                     const form = document.getElementById('contactForm');
-                    setTimeout(() => {
-                        form.reset();
-                    }, 500);
-                }
+                    const nombre = document.getElementById("nombre").value.trim();
+                    const email = document.getElementById("email").value.trim();
+                    const mensaje = document.getElementById("mensaje").value.trim();
+                
+                    const errorNombre = document.getElementById("errorNombre");
+                    const errorEmail = document.getElementById("errorEmail");
+                    const errorMensaje = document.getElementById("errorMensaje");
+                
+                    // Limpiar mensajes de error previos
+                    errorNombre.classList.add("d-none");
+                    errorEmail.classList.add("d-none");
+                    errorMensaje.classList.add("d-none");
+                
+                    let hasError = false;
+                
+                    // Validaciones
+                    if (!nombre) {
+                        errorNombre.classList.remove("d-none");
+                        hasError = true;
+                    }
+                
+                    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                        errorEmail.classList.remove("d-none");
+                        hasError = true;
+                    }
+                
+                    if (!mensaje) {
+                        errorMensaje.classList.remove("d-none");
+                        hasError = true;
+                    }
+                
+                    // Si no hay errores, enviar el formulario y limpiar
+                    if (!hasError) {
+                        alert("¡Mensaje enviado exitosamente! Puedes enviar otro mensaje ahora.");
+                        
+                        // Simular envío y limpieza
+                        form.reset(); // Limpiar el formulario inmediatamente
+                    }
+                });
             </script>
+              
+          
+            
         </section>
     </main>
 

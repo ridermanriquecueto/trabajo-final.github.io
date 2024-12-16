@@ -45,6 +45,7 @@
        
         <a href="productos.html" id="iconoGato" onclick="gatoLlamador(event)">
             <img src="img/cat_suerte.jpg" alt="Gato de la suerte" class="icono-gato">
+            <span id="mensajeClick" class="mensaje-click">Click</span>
         </a>
 
         <div class="menu-buscador-carrito">
@@ -75,11 +76,24 @@
 
     <script>
         function gatoLlamador(event) {
-            event.preventDefault(); 
-            alert("¡El gato de la suerte te da la bienvenida! Descubre nuestros productos.");
-            
-            window.location.href = "productos.html";
-        }
+    event.preventDefault();  // Evita el enlace por defecto
+    const mensaje = document.getElementById('mensajeClick');
+    
+    
+    alert("¡El gato de la suerte te da la bienvenida! Descubre nuestros productos.");
+    
+   
+    mensaje.style.display = 'none';
+    
+  
+    window.location.href = "productos.html";
+}
+
+
+document.getElementById('iconoGato').addEventListener('mouseenter', function() {
+    document.getElementById('mensajeClick').style.display = 'block';
+});
+
     </script>
     
     <footer class="text-center text-white bg-secondary py-3">

@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function mostrarProductos() {
-    // Código para mostrar productos (puede ser estático o desde una API)
+    
 }
 
 function agregarAlCarrito(event) {
