@@ -547,7 +547,7 @@ button[data-action="eliminar"]:hover {
 }
 
 .icono-gato {
-    width: 10px; 
+    width: 40px; 
     height: auto;
     cursor: pointer; 
     transition: transform 0.1s ease; 
